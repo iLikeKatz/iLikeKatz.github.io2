@@ -9,6 +9,7 @@ table {
     font-size: 35px;
     border-collapse: collapse; /* รวมเส้นขอบเขตของเซลล์เป็นเส้นเดียว */
     width: 100%; /* กำหนดความกว้างของตาราง */
+    text-align: center;
     }
 h2{
     text-align: left;
@@ -91,7 +92,7 @@ th , tr{
 }
 #setting {
   font-size: 25px;
-  margin-right: 100%;
+  margin-right: 90%;
 }
 .list{
   margin-left: 5%;
