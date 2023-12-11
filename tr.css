@@ -92,7 +92,7 @@ th , tr{
 }
 #setting {
   font-size: 25px;
-  margin-right: 90%;
+  text-align: left;
 }
 .list{
   margin-left: 5%;
