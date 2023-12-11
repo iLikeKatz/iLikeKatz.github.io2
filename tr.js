@@ -46,6 +46,7 @@ function randomExercise4() {
 }
 
 
+
 function outputQuest() {
   let random = Math.floor(Math.random()*40)
   let random2 = Math.floor(Math.random()*40)
@@ -159,15 +160,38 @@ function showunlock() {
   });
 };
 
+
+
+function Showmode() {
+let modal3 = document.getElementById("myModalShowset");
+  modal3.style.display = "none";
+
+  let modal4 = document.getElementById("myModalShowmode");
+  modal4.style.display = "block";
+  
+  let closeBtn4 = modal4.getElementsByClassName("close")[0];
+  closeBtn4.addEventListener("click", function() {
+    modal4.style.display = "none";
+  });
+   
+
+};
+
 function Showset() {
+let modal4 = document.getElementById("myModalShowmode");
+  modal4.style.display = "none";
+
   let modal3 = document.getElementById("myModalShowset");
   modal3.style.display = "block";
   
   let closeBtn3 = modal3.getElementsByClassName("close")[0];
   closeBtn3.addEventListener("click", function() {
     modal3.style.display = "none";
+
+    
   });
 };
+
 function checkLength() {
 let input = document.getElementById('addexc');
 let inputLength = input.value.length;

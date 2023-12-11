@@ -48,7 +48,7 @@ th , tr{
   height: 70%;
 
 }
-.modal-setcon {
+.modal-setcon , .modal-mode{
   background-color: #fff;
   position: absolute;
   top: 50%;
@@ -80,30 +80,51 @@ th , tr{
   font-size: 40px;
 }
 .NO , .YES {
-font-size: 40px;
+  font-size: 40px;
 }
 .NO{
-width: 70%;
-margin: 5%;
+  width: 70%;
+  margin: 5%;
 }
 .YES {
-width: 70%;
+  width: 70%;
 }
 #setting {
-font-size: 25px;
-text-align: left;
+  font-size: 25px;
+  text-align: left;
 }
 .list{
-margin-left: 5%;
-display: inline;
-font-size: 20px;
+  margin-left: 5%;
+  display: inline;
+  font-size: 20px;
 
 }
 #youadd {
-margin-left: 5%;
-font-size: 20px;
+  margin-left: 5%;
+  font-size: 20px;
 
 }
+
 #submitexc{
-display: inline;
+  display: inline;
+}
+
+#mode {
+  font-size: 25px;
+}
+
+a {
+  font-size: 25px;
+}
+#shows {
+  display: inline;
+  margin-inline-start: -50%;
+  
+ }
+#showm {
+  margin-inline-start: -40%;
+}
+.nav {
+  border: inset;
+  padding: 10px;
 }

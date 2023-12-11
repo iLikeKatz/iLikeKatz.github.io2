@@ -7,7 +7,7 @@
     <title>Training Random</title>
 </head>
 <body>
-  <p onclick="Showset();" id="setting">Setting</p>
+    <p onclick="Showset();" id="setting">Setting</p>
     <h1>Random Quests to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
@@ -31,6 +31,7 @@
     </table>
     <h2 id="Time">Time : </h2>
     <button id="Complete" onclick="stopTimer();">Complete</button>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -51,7 +52,11 @@
 
       <div id="myModalShowset" class="modal">
         <div class="modal-setcon">
-          <span class="close">&times;</span>  
+          <span class="close">&times;</span> 
+          <nav class="nav">
+            <a onclick="Showmode();" id="showm">Select mode</a>
+            <a onclick="Showset();" id="shows">Exercise List</a>
+          </nav> 
           <h1>Add Exercise List here</h1>
           <input type="text" id="addexc" value="" maxlength="30" oninput="checkLength();">
           <button onclick="addexcfunc();" id="submitexc">Submit</button>
@@ -69,6 +74,18 @@
         </div>
       </div>
 
+      <div id="myModalShowmode" class="modal">
+        <div class="modal-mode">
+          <span class="close">&times;</span>
+          <nav class="nav">
+            <a onclick="Showmode();" id="showm">Select mode</a>
+            <a onclick="Showset();" id="shows">Exercise List</a>
+          </nav> 
+          <p id="congrat">Congratulations!</p>
+          <p id="showtime"></p>
+          <p id="forsomeone"></p>
+        </div>
+      </div>
 
     <script src="tr.js" ></script>
 </body>
