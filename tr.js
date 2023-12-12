@@ -160,11 +160,44 @@ function showunlock() {
   });
 };
 
+function reto1() {
+  let selectList = document.getElementById('mySelectSet');
+  selectList.value = 'option1';
 
+}
+
+function reto1a() {
+  let selectList = document.getElementById('mySelectMode');
+  selectList.value = 'option1';
+}
+
+function reto1b() {
+   let selectList = document.getElementById('mySelectList');
+  selectList.value = 'option1';
+}
+
+function Showset() {
+let modal4 = document.getElementById("myModalShowmode");
+  modal4.style.display = "none";
+
+let modal3 = document.getElementById("myModalShowlist");
+  modal3.style.display = "none";
+
+  let modal5 = document.getElementById("myModalShowset");
+  modal5.style.display = "block";
+  
+  let closeBtn5 = modal5.getElementsByClassName("close")[0];
+  closeBtn5.addEventListener("click", function() {
+    modal5.style.display = "none";
+  });
+};
 
 function Showmode() {
-let modal3 = document.getElementById("myModalShowset");
+let modal3 = document.getElementById("myModalShowlist");
   modal3.style.display = "none";
+
+  let modal5 = document.getElementById("myModalShowset");
+  modal5.style.display = "none";
 
   let modal4 = document.getElementById("myModalShowmode");
   modal4.style.display = "block";
@@ -177,11 +210,15 @@ let modal3 = document.getElementById("myModalShowset");
 
 };
 
-function Showset() {
+
+function Showlist() {
 let modal4 = document.getElementById("myModalShowmode");
   modal4.style.display = "none";
 
-  let modal3 = document.getElementById("myModalShowset");
+let modal5 = document.getElementById("myModalShowset");
+  modal5.style.display = "none";
+
+  let modal3 = document.getElementById("myModalShowlist");
   modal3.style.display = "block";
   
   let closeBtn3 = modal3.getElementsByClassName("close")[0];
@@ -191,6 +228,48 @@ let modal4 = document.getElementById("myModalShowmode");
     
   });
 };
+
+let selectList = document.getElementById('mySelectList');
+selectList.addEventListener('change', function() {
+  let selectedValue = selectList.value;
+  if (selectedValue == 'option2') {
+    // ทำอะไรสักอย่างเมื่อเลือก option2
+    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
+  } else if (selectedValue == 'option3') {
+    // ทำอะไรสักอย่างเมื่อเลือก option3
+    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
+  } else if (selectedValue == 'option1') {
+    Showset();
+  }
+});
+
+let selectMode = document.getElementById('mySelectMode');
+selectMode.addEventListener('change', function() {
+  let selectedValue = selectMode.value;
+  if (selectedValue == 'option2') {
+    // ทำอะไรสักอย่างเมื่อเลือก option2
+    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
+  } else if (selectedValue == 'option3') {
+    // ทำอะไรสักอย่างเมื่อเลือก option3
+    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
+  } else if (selectedValue == 'option1') {
+    Showset();
+  }
+});
+
+let selectSet = document.getElementById('mySelectSet');
+selectSet.addEventListener('change', function() {
+  let selectedValue = selectSet.value;
+  if (selectedValue == 'option2') {
+    // ทำอะไรสักอย่างเมื่อเลือก option2
+    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
+  } else if (selectedValue == 'option3') {
+    // ทำอะไรสักอย่างเมื่อเลือก option3
+    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
+  } else if (selectedValue == 'option1') {
+    Showset();
+  }
+});
 
 function checkLength() {
 let input = document.getElementById('addexc');

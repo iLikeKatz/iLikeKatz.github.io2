@@ -7,7 +7,7 @@
     <title>Training Random</title>
 </head>
 <body>
-    <p onclick="Showset();" id="setting">Setting</p>
+    <p onclick="reto1(); Showset();" id="setting">Setting</p>
     <h1>Random Quests to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
@@ -51,12 +51,27 @@
       </div>
 
       <div id="myModalShowset" class="modal">
+        <div class="modal-showset">
+          <span class="close">&times;</span>
+          <nav class="nav">
+            
+            <select id="mySelectSet">
+              <option value="option1" id="optionset1" selected>Select</option>
+              <option value="option2" id="optionset2">View your list and add</option>
+              <option value="option3" id="optionset3">Select mode</option>
+            </select>
+          </nav>
+        </div>
+      </div>
+      
+      <div id="myModalShowlist" class="modal">
         <div class="modal-setcon">
           <span class="close">&times;</span> 
-          <nav class="nav">
-            <a onclick="Showmode();" id="showm">Select mode</a>
-            <a onclick="Showset();" id="shows">Exercise List</a>
-          </nav> 
+           <select id="mySelectList">
+              <option value="option1" id="optionlist1" selected>Select</option>
+              <option value="option2" id="optionlist2">View your list and add</option>
+              <option value="option3" id="optionlist3">Select mode</option>
+            </select>
           <h1>Add Exercise List here</h1>
           <input type="text" id="addexc" value="" maxlength="30" oninput="checkLength();">
           <button onclick="addexcfunc();" id="submitexc">Submit</button>
@@ -77,11 +92,13 @@
       <div id="myModalShowmode" class="modal">
         <div class="modal-mode">
           <span class="close">&times;</span>
-          <nav class="nav">
-            <a onclick="Showmode();" id="showm">Select mode</a>
-            <a onclick="Showset();" id="shows">Exercise List</a>
-          </nav> 
+           <select id="mySelectMode">
+              <option value="option1" id="optionmode1" selected>Select</option>
+              <option value="option2" id="optionmode2">View your list and add</option>
+              <option value="option3" id="optionmode3">Select mode</option>
+            </select>
           <p id="congrat">Congratulations!</p>
+          
           <p id="showtime"></p>
           <p id="forsomeone"></p>
         </div>
