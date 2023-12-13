@@ -7,8 +7,8 @@
     <title>Training Random</title>
 </head>
 <body>
-    <p onclick="reto1(); Showset();" id="setting">Setting</p>
-    <h1>Random Quests to Exercise </h1>
+  <p onclick="Showset();" id="setting">Setting</p>
+    <h1>Randomly Quest to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
     <table>
@@ -31,7 +31,6 @@
     </table>
     <h2 id="Time">Time : </h2>
     <button id="Complete" onclick="stopTimer();">Complete</button>
-
     <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -50,28 +49,35 @@
         </div>
       </div>
 
-      <div id="myModalShowset" class="modal">
+      <div id="myModalShowset" class="modal"> <!-- Showset -->
+
         <div class="modal-showset">
-          <span class="close">&times;</span>
+          <span class="close">&times;</span>  
           <nav class="nav">
-            
-            <select id="mySelectSet">
-              <option value="option1" id="optionset1" selected>Select</option>
-              <option value="option2" id="optionset2">View your list and add</option>
-              <option value="option3" id="optionset3">Select mode</option>
-            </select>
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
           </nav>
+          <fieldset id="fiein3">
+            <h1 id="thank">Thank you!</h1>
+            <h2>Coding by<u> iJust LikeCats</u></h2>
+            <h2> my facebook :</h2>
+            <a href=
+            "https://www.facebook.com/profile.php?id=100091302262619&mibextid=kFxxJD">
+            <img class="mypic" src='shescute.jpg' width="100" height="100">
+        
+        </a>
+      </fieldset>
         </div>
       </div>
-      
-      <div id="myModalShowlist" class="modal">
+
+      <div id="myModalList" class="modal"> <!-- Showlist-->
         <div class="modal-setcon">
-          <span class="close">&times;</span> 
-           <select id="mySelectList">
-              <option value="option1" id="optionlist1" selected>Select</option>
-              <option value="option2" id="optionlist2">View your list and add</option>
-              <option value="option3" id="optionlist3">Select mode</option>
-            </select>
+          <span class="close">&times;</span>
+          <nav class="nav">
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
+          </nav>
+
           <h1>Add Exercise List here</h1>
           <input type="text" id="addexc" value="" maxlength="30" oninput="checkLength();">
           <button onclick="addexcfunc();" id="submitexc">Submit</button>
@@ -89,18 +95,14 @@
         </div>
       </div>
 
-      <div id="myModalShowmode" class="modal">
-        <div class="modal-mode">
-          <span class="close">&times;</span>
-           <select id="mySelectMode">
-              <option value="option1" id="optionmode1" selected>Select</option>
-              <option value="option2" id="optionmode2">View your list and add</option>
-              <option value="option3" id="optionmode3">Select mode</option>
-            </select>
-          <p id="congrat">Congratulations!</p>
-          
-          <p id="showtime"></p>
-          <p id="forsomeone"></p>
+      <div id="myModalMode" class="modal"> <!-- ShowMode -->
+
+        <div class="modal-showmode">
+          <span class="close">&times;</span>  
+          <nav class="nav">
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
+          </nav>
         </div>
       </div>
 

@@ -46,7 +46,6 @@ function randomExercise4() {
 }
 
 
-
 function outputQuest() {
   let random = Math.floor(Math.random()*40)
   let random2 = Math.floor(Math.random()*40)
@@ -160,116 +159,50 @@ function showunlock() {
   });
 };
 
-function reto1() {
-  let selectList = document.getElementById('mySelectSet');
-  selectList.value = 'option1';
-
-}
-
-function reto1a() {
-  let selectList = document.getElementById('mySelectMode');
-  selectList.value = 'option1';
-}
-
-function reto1b() {
-   let selectList = document.getElementById('mySelectList');
-  selectList.value = 'option1';
-}
-
 function Showset() {
-let modal4 = document.getElementById("myModalShowmode");
-  modal4.style.display = "none";
 
-let modal3 = document.getElementById("myModalShowlist");
-  modal3.style.display = "none";
-
-  let modal5 = document.getElementById("myModalShowset");
-  modal5.style.display = "block";
+  let modal3 = document.getElementById("myModalShowset");
+    modal3.style.display = "block";
   
-  let closeBtn5 = modal5.getElementsByClassName("close")[0];
-  closeBtn5.addEventListener("click", function() {
-    modal5.style.display = "none";
+  let closeBtn3 = modal3.getElementsByClassName("close")[0];
+  closeBtn3.addEventListener("click", function() {
+    modal3.style.display = "none";
   });
 };
 
-function Showmode() {
-let modal3 = document.getElementById("myModalShowlist");
-  modal3.style.display = "none";
+function ShowList() {
+  let modal3 = document.getElementById("myModalShowset");
+    modal3.style.display = "none";
 
-  let modal5 = document.getElementById("myModalShowset");
+  let modal5 = document.getElementById('myModalMode');
   modal5.style.display = "none";
 
-  let modal4 = document.getElementById("myModalShowmode");
+  let modal4 = document.getElementById('myModalList');
   modal4.style.display = "block";
   
   let closeBtn4 = modal4.getElementsByClassName("close")[0];
   closeBtn4.addEventListener("click", function() {
     modal4.style.display = "none";
   });
-   
+}
 
-};
+function ShowMode() {
 
-
-function Showlist() {
-let modal4 = document.getElementById("myModalShowmode");
-  modal4.style.display = "none";
-
-let modal5 = document.getElementById("myModalShowset");
-  modal5.style.display = "none";
-
-  let modal3 = document.getElementById("myModalShowlist");
-  modal3.style.display = "block";
-  
-  let closeBtn3 = modal3.getElementsByClassName("close")[0];
-  closeBtn3.addEventListener("click", function() {
+  let modal3 = document.getElementById("myModalShowset");
     modal3.style.display = "none";
 
-    
+  let modal4 = document.getElementById('myModalList');
+  modal4.style.display = "none";
+
+  let modal5 = document.getElementById('myModalMode');
+  modal5.style.display = "block";
+  
+  let closeBtn5 = modal5.getElementsByClassName("close")[0];
+  closeBtn5.addEventListener("click", function() {
+    modal5.style.display = "none";
   });
-};
+}
 
-let selectList = document.getElementById('mySelectList');
-selectList.addEventListener('change', function() {
-  let selectedValue = selectList.value;
-  if (selectedValue == 'option2') {
-    // ทำอะไรสักอย่างเมื่อเลือก option2
-    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
-  } else if (selectedValue == 'option3') {
-    // ทำอะไรสักอย่างเมื่อเลือก option3
-    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
-  } else if (selectedValue == 'option1') {
-    Showset();
-  }
-});
-
-let selectMode = document.getElementById('mySelectMode');
-selectMode.addEventListener('change', function() {
-  let selectedValue = selectMode.value;
-  if (selectedValue == 'option2') {
-    // ทำอะไรสักอย่างเมื่อเลือก option2
-    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
-  } else if (selectedValue == 'option3') {
-    // ทำอะไรสักอย่างเมื่อเลือก option3
-    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
-  } else if (selectedValue == 'option1') {
-    Showset();
-  }
-});
-
-let selectSet = document.getElementById('mySelectSet');
-selectSet.addEventListener('change', function() {
-  let selectedValue = selectSet.value;
-  if (selectedValue == 'option2') {
-    // ทำอะไรสักอย่างเมื่อเลือก option2
-    Showlist(); // เรียกฟังก์ชัน Showlist() เมื่อเลือก option2
-  } else if (selectedValue == 'option3') {
-    // ทำอะไรสักอย่างเมื่อเลือก option3
-    Showmode(); // เรียกฟังก์ชัน Showmode() เมื่อเลือก option3
-  } else if (selectedValue == 'option1') {
-    Showset();
-  }
-});
 
 function checkLength() {
 let input = document.getElementById('addexc');
