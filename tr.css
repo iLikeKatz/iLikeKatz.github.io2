@@ -184,11 +184,11 @@ fieldset{
 
 }
 .NO {
-  font-size: 30px;
+  font-size: 25px;
   transform: translate(0% , 300%);
 }
 .YES {
-  font-size: 30px;
+  font-size: 25px;
   transform: translate(0% , 280%);
 }
 .Quest , .Questthan3 , .butran , .urq , #Time , #Complete {
