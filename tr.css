@@ -191,10 +191,10 @@ fieldset{
   font-size: 30px;
   transform: translate(0% , 280%);
 }
-.Quest , .Questthan3 , .butran , .urq , #Time , #Complete{
+.Quest , .Questthan3 , .butran , .urq , #Time , #Complete {
   font-size: 20px;
 }
-h1{
+h1 , #congrat , #showtime , #forsomeone{
   font-size: 25px;
 }
 }
